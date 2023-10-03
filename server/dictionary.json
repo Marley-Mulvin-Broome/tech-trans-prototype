@@ -1,0 +1,16 @@
+{
+    "words": {
+        "hello": [
+            {
+                "japanese": "こんにちは",
+                "exampleSentence": "Hello, I will see you tomorrow"
+            }
+        ],
+        "goodbye": [
+            {
+                "japanese": "さようなら",
+                "exampleSentence": "Goodbye, I will see you tomorrow"
+            }
+        ]
+    }
+}

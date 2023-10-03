@@ -11,8 +11,6 @@ chrome.runtime.onInstalled.addListener(async () => {
   const dbConnection = db();
 
   await dbConnection.initialise();
-
-  dbConnection.insert('hello', 'こんにちは', 'Hello, how are you?');
 });
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {

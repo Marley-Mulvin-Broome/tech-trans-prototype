@@ -1,3 +1,5 @@
+const databaseUrl = 'http://127.0.0.1:8000/dictionary'
+
 /**
  * Database of English words with their Japanese translations
  */
@@ -9,9 +11,11 @@ export const db = () => {
             return;
         }
 
-        await chrome.storage.local.set({ db: {} });
-        
-        insert('hello', 'こんにちは', 'Hello, world!');
+        const response = await fetch(databaseUrl);
+
+        const data = await response.json();
+
+        await chrome.storage.local.set({ db: {...data} });
     }
 
     /**
