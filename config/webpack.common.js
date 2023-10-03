@@ -28,7 +28,7 @@ const common = {
       // Help webpack in understanding CSS files imported in .js files
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [ MiniCssExtractPlugin.loader, 'css-loader'],
       },
       // Check for images imported in .js files and
       {

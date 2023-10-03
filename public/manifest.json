@@ -18,7 +18,18 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "storage"
+    "storage",
+    "unlimitedStorage"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "/components/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ],
   "content_scripts": [
     {

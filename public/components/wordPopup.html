@@ -1,0 +1,90 @@
+
+<div id="tech-translator-word-popup">
+</div>
+
+<style>
+    :root {
+        --rose-50: #fff1f2;
+        --rose-100: #ffe4e6;
+        --rose-200: #fecdd3;
+        --rose-300: #fda4af;
+        --rose-400: #fb7185;
+        --rose-500: #f43f5e;
+        --rose-600: #e11d48;
+        --rose-700: #be123c;
+        --rose-800: #9f1239;
+        --rose-900: #881337;
+    }
+
+    #tech-translator-word-popup {
+        width: 190px;
+        height: 190px;
+
+        z-index: 9999;
+
+        position: absolute;
+
+        background-color: var(--rose-200);
+
+        border-radius: 5px;
+
+        padding: 10px;
+        overflow-y: auto;
+
+        border: 1px solid var(--rose-300);
+    }
+
+    #tech-translator-word-popup::selection {
+        background-color: var(--rose-500);
+        color: #fff;
+    }
+
+
+    .tech-translator-word-popup-hidden {
+        display: none;
+    }
+
+    .tech-translator-word-popup-translation-container {
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .tech-translator-word-popup-english {
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        border-bottom: 1px solid var(--rose-400);
+    }
+
+    .tech-translator-word-popup-japanese {
+
+    }
+
+    .tech-translator-word-popup-add-tango-card-button {
+        width: 100%;
+        padding: 5px;
+
+        margin-top: 4px;
+
+        background-color: var(--rose-500);
+
+        border-radius: 5px;
+
+        color: #fff;
+
+        font-size: 1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: none;
+    }
+
+    .tech-translator-word-popup-add-tango-card-button:hover {
+        cursor: pointer;
+
+        opacity: 0.8;
+    }
+</style>
